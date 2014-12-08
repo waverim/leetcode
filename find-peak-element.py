@@ -1,9 +1,10 @@
 """
 二分搜索
+注意前提：num[i] ≠ num[i+1，所以不存在[1,2,1,1,1,1]这种情况
 入口：左==右，返回这个数的位置
 否则：如果num[mid] > num[mid+1]，查找mid左边[left, mid]，
 new_mid = (left+right)/2，如果位于mid的这个数是peak数，
-很有可能num[new_mid] < num[mid]，则查找new_mid右边[new_mid, mid],
+很有可能num[new_mid] < num[mid]，则查找new_mid右边(new_mid, mid],
 最后回到mid
 
 信仰的力量
