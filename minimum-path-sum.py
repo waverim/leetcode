@@ -22,7 +22,7 @@ class Solution:
                 elif j == 0 and i >=1:
                     grid[i][0] += grid[i-1][0]
                 else:
-                    grid[i][j] = min(grid[i-1][j], grid[i][j-1]) + grid[i][j]
+                    grid[i][j] += min(grid[i-1][j], grid[i][j-1])
         return grid[row-1][col-1]
 
 # test
