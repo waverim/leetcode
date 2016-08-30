@@ -4,6 +4,10 @@
 
 using namespace std;
 
+/*
+    https://discuss.leetcode.com/topic/14939/my-c-code-using-one-priority-queue-812-ms/4
+*/
+
 class Solution {
 public:
     vector<pair<int, int>> getSkyline(vector<vector<int>>& buildings) {
